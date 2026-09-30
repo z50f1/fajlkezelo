@@ -1,0 +1,15 @@
+﻿<Window x:Class="fajlkezelo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fajlkezelo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="aktualislabel" Content="" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Width="596"/>
+        <Button x:Name="gomb" Content="Új mappa" HorizontalAlignment="Left" Margin="102,296,0,0" VerticalAlignment="Top" Height="30" Width="77" Click="Button_Click"/>
+        <ListBox x:Name="fajllista" d:ItemsSource="{d:SampleData ItemCount=5}" MouseDoubleClick="fajl" Margin="102,99,370,169"/>
+        <TextBox x:Name="fajlbetoltese" HorizontalAlignment="Left" Height="133" Margin="451,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+    </Grid>
+</Window>
